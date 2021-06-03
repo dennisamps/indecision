@@ -1,0 +1,41 @@
+.big-button {
+    background: $blue;
+    border: none;
+    border-bottom: 0.6rem solid darken($blue,20%);
+    color: white;
+    font-weight: bold;
+    font-size: $l-size;
+    margin-bottom: $m-size;
+    padding: 2.4rem;
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.big-button:disabled {
+    opacity: 0.5;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .big-button {
+        margin-bottom: $xl-size
+    }
+}
+
+//smaller buttons
+.button {
+    background: $blue;
+    border: none;
+    border-bottom: 0.3rem solid darken($blue, 10%);
+    color: white;
+    font-weight: 500;
+    padding: $s-size;
+    border-radius: 15px;
+}
+
+.button--link {
+    background: none;
+    border: none;
+    color: $off-white;
+    padding: 0;
+}
